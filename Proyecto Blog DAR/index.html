@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El blog perruno</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>El blog perruno</h1>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>🐾Bienvenidos a El blog perruno, ¡GUAU!🐾</h2>
+            <p>Tu fuente número uno para todo lo relacionado con perros.</p>
+        </section>
+
+        
+        <section id="busqueda" class="search-section">
+            <div class="barra-busqueda">
+                <input type="text" id="buscar" placeholder="Buscar..." autocomplete="off">
+                <button type="button" onclick="buscarPagina()">Buscar</button>
+                <div id="sugerencias" class="sugerencias"></div>
+            </div>
+        </section>
+
+        <section id="posts">
+            <nav>
+                <h2>Últimas Publicaciones</h2>
+
+            <div class="card-group">
+                    <a href="consejos.html" class="card">
+                        <img src="recursos/perro1.png" alt="Consejos sobre perros">
+                        <div class="card-content">
+                            <h3>Consejos generales</h3>
+                        </div>
+                    </a>
+
+                    <a href="cuidados.html" class="card">
+                        <img src="recursos/perro2.png" alt="Cuidados especiales">
+                        <div class="card-content">
+                            <h3>Cuidados especiales</h3>
+                        </div>
+                    </a>
+
+                    <a href="cachorros.html" class="card">
+                        <img src="recursos/perro3.png" alt="Tratamiento de cachorros">
+                        <div class="card-content">
+                            <h3>Tratamiento de cachorros</h3>
+                        </div>
+                    </a>
+            </div>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos amantes de los perros que comparten consejos y noticias sobre nuestros familiares peludos.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas o quieres colaborar? ¡Contáctanos!</p>
+        </section>
+        <div class="copyright">
+            <p>&copy; 2025 El blog perruno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
