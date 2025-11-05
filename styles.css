@@ -7,13 +7,13 @@ header {
 }
 
 body {
-  background-color: #fff8e1; /* color crema suave */
+  background-color: #fff8e1;
 }
 
 h2 {
-  color: #6d4c41; /* marrón oscuro */
+  color: #6d4c41;
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico';
   font-size: 28px;
   color: #5a2d0c;
 }
@@ -27,13 +27,13 @@ p {
   font-size: 20px;
   line-height: 1.6;
   text-align: center;
-  color: #4e342e; /* marrón medio */
-  font-family: 'Chewy', cursive;
+  color: #4e342e;
+  font-family: 'Chewy';
 }
 
 footer {
-  background-color: #582715; /* marrón claro */
-  color: #ad610b; /* marrón muy oscuro */
+  background-color: #582715; 
+  color: #ad610b;
   text-align: center;
   padding: 15px 10px;
   font-size: 14px;
@@ -73,7 +73,7 @@ footer p, footer h2 {
 
 .card-content h3 {
   margin: 10px 0 5px;
-  font-family: 'Chewy', cursive;
+  font-family: 'Chewy';
   color: #4d2600;
 }
 
@@ -192,4 +192,5 @@ li{
     margin-top: 10px;
     font-size: 10px;
     color: #d7ccc8;
+
 }
