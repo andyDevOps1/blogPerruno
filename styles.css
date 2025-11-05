@@ -13,7 +13,7 @@ body {
 h2 {
   color: #6d4c41;
   text-align: center;
-  font-family: 'Pacifico', 'bold';
+  font-family: 'Pacifico', cursive;
   font-size: 28px;
   color: #5a2d0c;
 }
@@ -28,7 +28,7 @@ p {
   line-height: 1.6;
   text-align: center;
   color: #4e342e;
-  font-family: 'Chewy', 'bold';
+  font-family: 'Chewy', cursive;
 }
 
 footer {
@@ -73,7 +73,7 @@ footer p, footer h2 {
 
 .card-content h3 {
   margin: 10px 0 5px;
-  font-family: 'Chewy', 'bold';
+  font-family: 'Chewy', cursive;
   color: #4d2600;
 }
 
@@ -194,5 +194,6 @@ li{
     color: #d7ccc8;
 
 }
+
 
 
