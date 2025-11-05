@@ -1,11 +1,9 @@
-// Lista de temas y sus enlaces
 const temas = [
   { nombre: "Consejos sobre perros", link: "consejos.html" },
   { nombre: "Cuidados especiales", link: "cuidados.html" },
   { nombre: "Tratamiento de cachorros", link: "cachorros.html" }
 ];
 
-// Normaliza (minúsculas y sin acentos)
 function normalizar(texto) {
   return texto
     .toLowerCase()
@@ -16,7 +14,6 @@ function normalizar(texto) {
 const input = document.getElementById("buscar");
 const sugerencias = document.getElementById("sugerencias");
 
-// Muestra sugerencias parecidas mientras escribes
 input.addEventListener("input", () => {
   const texto = normalizar(input.value.trim());
   sugerencias.innerHTML = "";
@@ -26,7 +23,6 @@ input.addEventListener("input", () => {
     return;
   }
 
-  // Coincidencias parciales
   const resultados = temas.filter(t =>
     normalizar(t.nombre).includes(texto)
   );
@@ -36,7 +32,6 @@ input.addEventListener("input", () => {
       const opcion = document.createElement("div");
       opcion.textContent = t.nombre;
 
-      // Solo rellena el campo, NO redirige
       opcion.addEventListener("click", () => {
         input.value = t.nombre;
         sugerencias.style.display = "none";
@@ -50,7 +45,6 @@ input.addEventListener("input", () => {
   }
 });
 
-// 🔹 Pulsar Enter busca la página
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
@@ -58,7 +52,6 @@ input.addEventListener("keydown", (e) => {
   }
 });
 
-// 🔹 Pulsar el botón "Buscar"
 function buscarPagina() {
   const texto = normalizar(input.value.trim());
   const encontrado = temas.find(t => normalizar(t.nombre) === texto);
@@ -70,11 +63,11 @@ function buscarPagina() {
   }
 }
 
-// 🔹 Ocultar sugerencias al hacer clic fuera
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".barra-busqueda")) {
     sugerencias.style.display = "none";
   }
 });
+
 
 
